@@ -11,6 +11,7 @@ using Serialization
 using Distributions
 using NearestNeighbors
 using PyCall
+using numpy
 
 include("ssa.jl")
 include("ens_forecast.jl")
@@ -19,8 +20,6 @@ include("ssa_varimax.jl")
 using .SSA
 using .ens_forecast
 using .ssa_varimax
-
-suing fgvdfgdsfg 
 
 nanmean(x) = mean(filter(!isnan,x))
 nanmean(x,y) = mapslices(nanmean,x,dims=y)
