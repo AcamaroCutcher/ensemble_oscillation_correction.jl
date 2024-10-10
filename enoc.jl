@@ -20,6 +20,8 @@ using .SSA
 using .ens_forecast
 using .ssa_varimax
 
+suing fgvdfgdsfg 
+
 nanmean(x) = mean(filter(!isnan,x))
 nanmean(x,y) = mapslices(nanmean,x,dims=y)
 
